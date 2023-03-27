@@ -8,5 +8,5 @@ Swift 5
 Xcode 14.2  
 
 # TestFlight
-外部テスターとしていち早くアプリを試せます！
+外部テスターとしていち早くアプリを試せます！  
 https://testflight.apple.com/join/FmtIT8yc
