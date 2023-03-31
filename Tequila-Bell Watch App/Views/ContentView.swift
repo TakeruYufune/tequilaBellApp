@@ -6,35 +6,17 @@
 //
 
 import SwiftUI
-import AVFAudio
 
 struct ContentView: View {
-    
-    let soundPlayer = tequilaPlayer()
-    
     var body: some View {
-        VStack {
-            Image("tequilaBell")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .onTapGesture {
-                    setAudioSession()
-                    soundPlayer.musicPlay()
-                }
-        }
-    }
-}
-
-func setAudioSession(){
-    let audioSession = AVAudioSession.sharedInstance()
-    do {
-        // カテゴリの設定
-        try audioSession.setCategory(.playback, mode: .moviePlayback, options: [])
-
-        // AVAudioSessionの有効化
-        try audioSession.setActive(true)
-    } catch {
-        print(error)
+        TabView {
+            NavigationStack {
+                defaultTequilaBell()
+            }
+            NavigationStack {
+                realTequilaBell()
+            }
+        }.tabViewStyle(.page)
     }
 }
 
