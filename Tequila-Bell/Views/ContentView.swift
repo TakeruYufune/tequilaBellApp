@@ -9,21 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let soundPlayer = tequilaPlayer()
-    
     var body: some View {
-        VStack {
-            Image("tequilaBell")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .onTapGesture {
-                    soundPlayer.musicPlay()
-                }
-        }
-        .frame(maxWidth: .infinity,
-                   maxHeight: .infinity
-            )
-        .background(Color.black)
+        TabView {
+            NavigationStack {
+                defaultTequilaBell()
+            }
+            NavigationStack {
+                realTequilaBell()
+            }
+        }.tabViewStyle(.page)
     }
 }
 
