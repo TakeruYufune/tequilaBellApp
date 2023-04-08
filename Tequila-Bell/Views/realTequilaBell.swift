@@ -24,6 +24,7 @@ struct realTequilaBell: View {
                    maxHeight: .infinity
             )
         .background(Color.black)
+        .ignoresSafeArea()
     }
 }
 
