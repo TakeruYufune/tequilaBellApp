@@ -11,13 +11,19 @@ struct defaultTequilaBell: View {
     
     let soundPlayer = tequilaPlayer()
     
+    @State var bellCount: Int = 0
+    
     var body: some View {
         VStack {
+            Text("\(bellCount)")
+                .font(.system(size: 24.0))
+            
             Image("tequilaBell")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .onTapGesture {
                     soundPlayer.musicPlay()
+                    bellCount += 1
                 }
         }
         .frame(maxWidth: .infinity,
