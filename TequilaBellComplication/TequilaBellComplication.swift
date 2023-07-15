@@ -69,13 +69,13 @@ struct TequilaBellComplicationEntryView : View {
 struct InlineComplication : View {
     var body: some View {
         Text("Tequila-Bell")
+            .widgetAccentable()
     }
 }
 
 struct CircularComplication : View {
     var body: some View {
         //Image(systemName:"apple.logo")
-        
         Image("tequilaSmall")
             .resizable()
             .aspectRatio(contentMode: .fit)
@@ -91,6 +91,7 @@ struct CornerComplication : View {
         Image("tequilaSmall")
             .resizable()
             .aspectRatio(contentMode: .fit)
+            .widgetAccentable()
     }
 }
 
@@ -99,6 +100,7 @@ struct RectangularComplication : View {
         Image("tequilaSmall")
             .resizable()
             .aspectRatio(contentMode: .fit)
+            .widgetAccentable()
     }
 }
 
