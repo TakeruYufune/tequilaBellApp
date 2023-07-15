@@ -68,19 +68,18 @@ struct TequilaBellComplicationEntryView : View {
 
 struct InlineComplication : View {
     var body: some View {
-        Text("TequilaBell")
-            .font(.system(size: 12.0))
+        Text("Tequila-Bell")
     }
 }
 
 struct CircularComplication : View {
     var body: some View {
-        Image(systemName:"apple.logo")
-        /*
-        Image("tequilaBell")
+        //Image(systemName:"apple.logo")
+        
+        Image("tequilaSmall")
             .resizable()
             .aspectRatio(contentMode: .fit)
-        */
+            .widgetAccentable()
         .widgetLabel {
             Text("TequilaBell")
         }
@@ -89,15 +88,17 @@ struct CircularComplication : View {
 
 struct CornerComplication : View {
     var body: some View {
-        Text("TequilaBell")
-            .font(.system(size: 12.0))
+        Image("tequilaSmall")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
     }
 }
 
 struct RectangularComplication : View {
     var body: some View {
-        Text("TequilaBell")
-            .font(.system(size: 12.0))
+        Image("tequilaSmall")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
     }
 }
 

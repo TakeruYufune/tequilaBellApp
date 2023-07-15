@@ -30,6 +30,8 @@
 		8F3EE7ED2A555290008DE712 /* TequilaBellComplication.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EE7E92A55528F008DE712 /* TequilaBellComplication.intentdefinition */; };
 		8F3EE7EE2A555290008DE712 /* TequilaBellComplication.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EE7E92A55528F008DE712 /* TequilaBellComplication.intentdefinition */; };
 		8F3EE7F12A555290008DE712 /* TequilaBellComplicationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F3EE7E02A55528F008DE712 /* TequilaBellComplicationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F3EE7F72A619120008DE712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3EE7EA2A555290008DE712 /* Assets.xcassets */; };
+		8F3EE7F82A619199008DE712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F373C2629D18EE800ECC542 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -362,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F373C2A29D18EE800ECC542 /* Preview Assets.xcassets in Resources */,
+				8F3EE7F72A619120008DE712 /* Assets.xcassets in Resources */,
 				8F373C2729D18EE800ECC542 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +373,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3EE7F82A619199008DE712 /* Assets.xcassets in Resources */,
 				8F3EE7EB2A555290008DE712 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -693,7 +697,7 @@
 					"@executable_path/../../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackz.hackathons.Tequila-Bell.watchkitapp.TequilaBellComplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -723,7 +727,7 @@
 					"@executable_path/../../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackz.hackathons.Tequila-Bell.watchkitapp.TequilaBellComplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
