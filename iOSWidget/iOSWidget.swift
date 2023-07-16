@@ -69,7 +69,9 @@ struct iOSWidgetEntryView : View {
 
 struct SmallWidget : View {
     var body: some View {
-        Text("Small")
+        Image("tequilaSmallSVG")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
             .widgetAccentable()
     }
 }
