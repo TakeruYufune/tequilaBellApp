@@ -41,6 +41,7 @@
 		8F3EE8102A63B4DC008DE712 /* iOSWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EE80C2A63B4DA008DE712 /* iOSWidget.intentdefinition */; };
 		8F3EE8112A63B4DC008DE712 /* iOSWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EE80C2A63B4DA008DE712 /* iOSWidget.intentdefinition */; };
 		8F3EE8142A63B4DC008DE712 /* iOSWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F3EE8022A63B4DA008DE712 /* iOSWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F3EE8192A63C4F7008DE712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F373C1429D18EE700ECC542 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -463,6 +464,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3EE8192A63C4F7008DE712 /* Assets.xcassets in Resources */,
 				8F3EE80E2A63B4DC008DE712 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

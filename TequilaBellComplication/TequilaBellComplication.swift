@@ -52,16 +52,16 @@ struct TequilaBellComplicationEntryView : View {
 
     var body: some View {
         switch widgetFamily {
-                case .accessoryCorner:
-                    CornerComplication()
-                case .accessoryCircular:
-                    CircularComplication()
-                case .accessoryInline:
-                    InlineComplication()
-                case .accessoryRectangular:
-                    RectangularComplication()
-                @unknown default:
-                    Text("No　Complication")
+            case .accessoryCorner:
+                CornerComplication()
+            case .accessoryCircular:
+                CircularComplication()
+            case .accessoryInline:
+                InlineComplication()
+            case .accessoryRectangular:
+                RectangularComplication()
+            @unknown default:
+                Text("No　Complication")
          }
     }
 }

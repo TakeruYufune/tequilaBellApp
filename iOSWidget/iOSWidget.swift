@@ -41,10 +41,80 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct iOSWidgetEntryView : View {
+    @Environment(\.widgetFamily) var widgetFamily
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        switch widgetFamily {
+            case .systemSmall:
+                SmallWidget()
+            case .systemMedium:
+                MediumWidget()
+            case .systemLarge:
+                LargeWidget()
+            case .systemExtraLarge:
+                ExtraLargeWidget()
+            case .accessoryInline:
+                InlineWidget()
+            case .accessoryCircular:
+                CircularWidget()
+            case .accessoryRectangular:
+                RectangularWidget()
+            @unknown default:
+                Text("No　Complication")
+                
+         }
+    }
+}
+
+struct SmallWidget : View {
+    var body: some View {
+        Text("Small")
+            .widgetAccentable()
+    }
+}
+
+struct MediumWidget : View {
+    var body: some View {
+        Text("Medium")
+            .widgetAccentable()
+    }
+}
+
+struct LargeWidget : View {
+    var body: some View {
+        Text("Large")
+            .widgetAccentable()
+    }
+}
+
+struct ExtraLargeWidget : View {
+    var body: some View {
+        Text("ExtraLarge")
+            .widgetAccentable()
+    }
+}
+
+struct InlineWidget : View {
+    var body: some View {
+        Text("Inline")
+            .widgetAccentable()
+    }
+}
+
+struct CircularWidget : View {
+    var body: some View {
+        Image("tequilaSmallSVG")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .widgetAccentable()
+    }
+}
+
+struct RectangularWidget : View {
+    var body: some View {
+        Text("Rectangular")
+            .widgetAccentable()
     }
 }
 
