@@ -32,6 +32,16 @@
 		8F3EE7F12A555290008DE712 /* TequilaBellComplicationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F3EE7E02A55528F008DE712 /* TequilaBellComplicationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8F3EE7F72A619120008DE712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3EE7EA2A555290008DE712 /* Assets.xcassets */; };
 		8F3EE7F82A619199008DE712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F373C2629D18EE800ECC542 /* Assets.xcassets */; };
+		8F3EE8032A63B4DA008DE712 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3EE7E22A55528F008DE712 /* WidgetKit.framework */; };
+		8F3EE8042A63B4DA008DE712 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3EE7E42A55528F008DE712 /* SwiftUI.framework */; };
+		8F3EE8072A63B4DA008DE712 /* iOSWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EE8062A63B4DA008DE712 /* iOSWidgetBundle.swift */; };
+		8F3EE8092A63B4DA008DE712 /* iOSWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EE8082A63B4DA008DE712 /* iOSWidgetLiveActivity.swift */; };
+		8F3EE80B2A63B4DA008DE712 /* iOSWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EE80A2A63B4DA008DE712 /* iOSWidget.swift */; };
+		8F3EE80E2A63B4DC008DE712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F3EE80D2A63B4DC008DE712 /* Assets.xcassets */; };
+		8F3EE8102A63B4DC008DE712 /* iOSWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EE80C2A63B4DA008DE712 /* iOSWidget.intentdefinition */; };
+		8F3EE8112A63B4DC008DE712 /* iOSWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EE80C2A63B4DA008DE712 /* iOSWidget.intentdefinition */; };
+		8F3EE8142A63B4DC008DE712 /* iOSWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F3EE8022A63B4DA008DE712 /* iOSWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F3EE8192A63C4F7008DE712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F373C1429D18EE700ECC542 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8F3EE7DF2A55528F008DE712;
 			remoteInfo = TequilaBellComplicationExtension;
+		};
+		8F3EE8122A63B4DC008DE712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F373C0529D18EE500ECC542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F3EE8012A63B4DA008DE712;
+			remoteInfo = iOSWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -70,6 +87,17 @@
 			dstSubfolderSpec = 13;
 			files = (
 				8F3EE7F12A555290008DE712 /* TequilaBellComplicationExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3EE8152A63B4DC008DE712 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8F3EE8142A63B4DC008DE712 /* iOSWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +130,13 @@
 		8F3EE7EA2A555290008DE712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F3EE7EC2A555290008DE712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F3EE7F62A555D70008DE712 /* Tequila-Bell-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Tequila-Bell-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8F3EE8022A63B4DA008DE712 /* iOSWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iOSWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3EE8062A63B4DA008DE712 /* iOSWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSWidgetBundle.swift; sourceTree = "<group>"; };
+		8F3EE8082A63B4DA008DE712 /* iOSWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		8F3EE80A2A63B4DA008DE712 /* iOSWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSWidget.swift; sourceTree = "<group>"; };
+		8F3EE80C2A63B4DA008DE712 /* iOSWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = iOSWidget.intentdefinition; sourceTree = "<group>"; };
+		8F3EE80D2A63B4DC008DE712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F3EE80F2A63B4DC008DE712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +163,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F3EE7FF2A63B4DA008DE712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3EE8042A63B4DA008DE712 /* SwiftUI.framework in Frameworks */,
+				8F3EE8032A63B4DA008DE712 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -137,6 +181,7 @@
 				8F373C0F29D18EE600ECC542 /* Tequila-Bell */,
 				8F373C2129D18EE700ECC542 /* Tequila-Bell Watch App */,
 				8F3EE7E62A55528F008DE712 /* TequilaBellComplication */,
+				8F3EE8052A63B4DA008DE712 /* iOSWidget */,
 				8F3EE7E12A55528F008DE712 /* Frameworks */,
 				8F373C0E29D18EE600ECC542 /* Products */,
 			);
@@ -148,6 +193,7 @@
 				8F373C0D29D18EE600ECC542 /* Tequila-Bell.app */,
 				8F373C1D29D18EE700ECC542 /* Tequila-Bell Watch App.app */,
 				8F3EE7E02A55528F008DE712 /* TequilaBellComplicationExtension.appex */,
+				8F3EE8022A63B4DA008DE712 /* iOSWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,6 +296,19 @@
 			path = TequilaBellComplication;
 			sourceTree = "<group>";
 		};
+		8F3EE8052A63B4DA008DE712 /* iOSWidget */ = {
+			isa = PBXGroup;
+			children = (
+				8F3EE8062A63B4DA008DE712 /* iOSWidgetBundle.swift */,
+				8F3EE8082A63B4DA008DE712 /* iOSWidgetLiveActivity.swift */,
+				8F3EE80A2A63B4DA008DE712 /* iOSWidget.swift */,
+				8F3EE80C2A63B4DA008DE712 /* iOSWidget.intentdefinition */,
+				8F3EE80D2A63B4DC008DE712 /* Assets.xcassets */,
+				8F3EE80F2A63B4DC008DE712 /* Info.plist */,
+			);
+			path = iOSWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,11 +320,13 @@
 				8F373C0A29D18EE600ECC542 /* Frameworks */,
 				8F373C0B29D18EE600ECC542 /* Resources */,
 				8F373C3029D18EE800ECC542 /* Embed Watch Content */,
+				8F3EE8152A63B4DC008DE712 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				8F373C2029D18EE700ECC542 /* PBXTargetDependency */,
+				8F3EE8132A63B4DC008DE712 /* PBXTargetDependency */,
 			);
 			name = "Tequila-Bell";
 			productName = "Tequila-Bell";
@@ -308,6 +369,23 @@
 			productReference = 8F3EE7E02A55528F008DE712 /* TequilaBellComplicationExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		8F3EE8012A63B4DA008DE712 /* iOSWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3EE8182A63B4DC008DE712 /* Build configuration list for PBXNativeTarget "iOSWidgetExtension" */;
+			buildPhases = (
+				8F3EE7FE2A63B4DA008DE712 /* Sources */,
+				8F3EE7FF2A63B4DA008DE712 /* Frameworks */,
+				8F3EE8002A63B4DA008DE712 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSWidgetExtension;
+			productName = iOSWidgetExtension;
+			productReference = 8F3EE8022A63B4DA008DE712 /* iOSWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -325,6 +403,9 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					8F3EE7DF2A55528F008DE712 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					8F3EE8012A63B4DA008DE712 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -345,6 +426,7 @@
 				8F373C0C29D18EE600ECC542 /* Tequila-Bell */,
 				8F373C1C29D18EE700ECC542 /* Tequila-Bell Watch App */,
 				8F3EE7DF2A55528F008DE712 /* TequilaBellComplicationExtension */,
+				8F3EE8012A63B4DA008DE712 /* iOSWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -378,6 +460,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F3EE8002A63B4DA008DE712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3EE8192A63C4F7008DE712 /* Assets.xcassets in Resources */,
+				8F3EE80E2A63B4DC008DE712 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -389,6 +480,7 @@
 				8F373C4E29D73C4100ECC542 /* realTequilaBell.swift in Sources */,
 				8F373C4029D194FF00ECC542 /* tequilaPlayer.swift in Sources */,
 				8F373C1329D18EE600ECC542 /* ContentView.swift in Sources */,
+				8F3EE8112A63B4DC008DE712 /* iOSWidget.intentdefinition in Sources */,
 				8F373C1129D18EE600ECC542 /* Tequila_BellApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +508,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F3EE7FE2A63B4DA008DE712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3EE8092A63B4DA008DE712 /* iOSWidgetLiveActivity.swift in Sources */,
+				8F3EE80B2A63B4DA008DE712 /* iOSWidget.swift in Sources */,
+				8F3EE8102A63B4DC008DE712 /* iOSWidget.intentdefinition in Sources */,
+				8F3EE8072A63B4DA008DE712 /* iOSWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -428,6 +531,11 @@
 			isa = PBXTargetDependency;
 			target = 8F3EE7DF2A55528F008DE712 /* TequilaBellComplicationExtension */;
 			targetProxy = 8F3EE7EF2A555290008DE712 /* PBXContainerItemProxy */;
+		};
+		8F3EE8132A63B4DC008DE712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F3EE8012A63B4DA008DE712 /* iOSWidgetExtension */;
+			targetProxy = 8F3EE8122A63B4DC008DE712 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -740,6 +848,67 @@
 			};
 			name = Release;
 		};
+		8F3EE8162A63B4DC008DE712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 32R8ZWSZ8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iOSWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackz.hackathons.Tequila-Bell.iOSWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F3EE8172A63B4DC008DE712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 32R8ZWSZ8D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iOSWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackz.hackathons.Tequila-Bell.iOSWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -775,6 +944,15 @@
 			buildConfigurations = (
 				8F3EE7F32A555290008DE712 /* Debug */,
 				8F3EE7F42A555290008DE712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3EE8182A63B4DC008DE712 /* Build configuration list for PBXNativeTarget "iOSWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F3EE8162A63B4DC008DE712 /* Debug */,
+				8F3EE8172A63B4DC008DE712 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

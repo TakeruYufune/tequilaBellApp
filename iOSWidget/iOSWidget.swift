@@ -1,8 +1,8 @@
 //
-//  TequilaBellComplication.swift
-//  TequilaBellComplication
+//  iOSWidget.swift
+//  iOSWidget
 //
-//  Created by どりー_Hack'z on 2023/07/05.
+//  Created by どりー_Hack'z on 2023/07/16.
 //
 
 import WidgetKit
@@ -33,12 +33,6 @@ struct Provider: IntentTimelineProvider {
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
-
-    func recommendations() -> [IntentRecommendation<ConfigurationIntent>] {
-        return [
-            IntentRecommendation(intent: ConfigurationIntent(), description: "TequilaBell")
-        ]
-    }
 }
 
 struct SimpleEntry: TimelineEntry {
@@ -46,80 +40,122 @@ struct SimpleEntry: TimelineEntry {
     let configuration: ConfigurationIntent
 }
 
-struct TequilaBellComplicationEntryView : View {
+struct iOSWidgetEntryView : View {
     @Environment(\.widgetFamily) var widgetFamily
     var entry: Provider.Entry
 
     var body: some View {
         switch widgetFamily {
-            case .accessoryCorner:
-                CornerComplication()
-            case .accessoryCircular:
-                CircularComplication()
+            case .systemSmall:
+                SmallWidget()
+            case .systemMedium:
+                MediumWidget()
+            case .systemLarge:
+                LargeWidget()
+            case .systemExtraLarge:
+                ExtraLargeWidget()
             case .accessoryInline:
-                InlineComplication()
+                InlineWidget()
+            case .accessoryCircular:
+                CircularWidget()
             case .accessoryRectangular:
-                RectangularComplication()
+                RectangularWidget()
             @unknown default:
                 Text("No　Complication")
+                
          }
     }
 }
 
-struct InlineComplication : View {
+struct SmallWidget : View {
     var body: some View {
-        Text("Tequila-Bell")
-            .widgetAccentable()
-    }
-}
-
-struct CircularComplication : View {
-    var body: some View {
-        //Image(systemName:"apple.logo")
-        Image("tequilaSmall")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .widgetAccentable()
-        .widgetLabel {
-            Text("TequilaBell")
-        }
-    }
-}
-
-struct CornerComplication : View {
-    var body: some View {
-        Image("tequilaSmall")
+        Image("tequilaSmallSVG")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .widgetAccentable()
     }
 }
 
-struct RectangularComplication : View {
+struct MediumWidget : View {
     var body: some View {
-        Image("tequilaSmall")
+        Text("Medium")
+            .widgetAccentable()
+    }
+}
+
+struct LargeWidget : View {
+    var body: some View {
+        Text("Large")
+            .widgetAccentable()
+    }
+}
+
+struct ExtraLargeWidget : View {
+    var body: some View {
+        Text("ExtraLarge")
+            .widgetAccentable()
+    }
+}
+
+struct InlineWidget : View {
+    var body: some View {
+        Text("Inline")
+            .widgetAccentable()
+    }
+}
+
+struct CircularWidget : View {
+    var body: some View {
+        Image("tequilaSmallSVG")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .widgetAccentable()
     }
 }
 
-@main
-struct TequilaBellComplication: Widget {
-    let kind: String = "TequilaBellComplication"
+struct RectangularWidget : View {
+    var body: some View {
+        Text("Rectangular")
+            .widgetAccentable()
+    }
+}
+
+struct iOSWidget: Widget {
+    let kind: String = "iOSWidget"
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
-            TequilaBellComplicationEntryView(entry: entry)
+            iOSWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+        .supportedFamilies(supportedFamilies)
     }
+    
+    private var supportedFamilies: [WidgetFamily] {
+            if #available(iOSApplicationExtension 16.0, *) {
+                return [
+                    .systemSmall,
+                    .systemMedium,
+                    .systemLarge,
+                    .systemExtraLarge,
+                    .accessoryInline,
+                    .accessoryCircular,
+                    .accessoryRectangular
+                ]
+            } else {
+                return [
+                    .systemSmall,
+                    .systemMedium,
+                    .systemLarge
+                ]
+            }
+        }
 }
 
-struct TequilaBellComplication_Previews: PreviewProvider {
+struct iOSWidget_Previews: PreviewProvider {
     static var previews: some View {
-        TequilaBellComplicationEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
-            .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
+        iOSWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+            .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
