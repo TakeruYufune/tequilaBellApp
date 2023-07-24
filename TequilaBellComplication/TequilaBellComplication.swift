@@ -76,7 +76,7 @@ struct InlineComplication : View {
 struct CircularComplication : View {
     var body: some View {
         //Image(systemName:"apple.logo")
-        Image("tequilaSmall")
+        Image("tequilaSVG")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .widgetAccentable()
@@ -88,7 +88,7 @@ struct CircularComplication : View {
 
 struct CornerComplication : View {
     var body: some View {
-        Image("tequilaSmall")
+        Image("tequilaSVG")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .widgetAccentable()
@@ -97,7 +97,7 @@ struct CornerComplication : View {
 
 struct RectangularComplication : View {
     var body: some View {
-        Image("tequilaSmall")
+        Image("tequilaSVG")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .widgetAccentable()
