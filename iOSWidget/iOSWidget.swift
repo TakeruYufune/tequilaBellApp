@@ -69,7 +69,7 @@ struct iOSWidgetEntryView : View {
 
 struct SmallWidget : View {
     var body: some View {
-        Image("tequilaSmallSVG")
+        Image("tequilaSVG")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .widgetAccentable()
@@ -78,35 +78,41 @@ struct SmallWidget : View {
 
 struct MediumWidget : View {
     var body: some View {
-        Text("Medium")
+        Image("tequilaSVG")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
             .widgetAccentable()
     }
 }
 
 struct LargeWidget : View {
     var body: some View {
-        Text("Large")
+        Image("tequilaSVG")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
             .widgetAccentable()
     }
 }
 
 struct ExtraLargeWidget : View {
     var body: some View {
-        Text("ExtraLarge")
+        Image("tequilaSVG")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
             .widgetAccentable()
     }
 }
 
 struct InlineWidget : View {
     var body: some View {
-        Text("Inline")
+        Text("Tequila-Bell")
             .widgetAccentable()
     }
 }
 
 struct CircularWidget : View {
     var body: some View {
-        Image("tequilaSmallSVG")
+        Image("tequilaSVG")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .widgetAccentable()
@@ -115,7 +121,7 @@ struct CircularWidget : View {
 
 struct RectangularWidget : View {
     var body: some View {
-        Text("Rectangular")
+        Text("Tequila-Bell")
             .widgetAccentable()
     }
 }
