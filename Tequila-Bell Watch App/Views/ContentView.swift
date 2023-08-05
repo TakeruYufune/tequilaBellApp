@@ -16,6 +16,9 @@ struct ContentView: View {
             NavigationStack {
                 realTequilaBell()
             }
+            NavigationStack{
+                originalTequilaBell()
+            }
         }.tabViewStyle(.page)
     }
 }

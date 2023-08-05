@@ -43,6 +43,7 @@
 		8F3EE8142A63B4DC008DE712 /* iOSWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F3EE8022A63B4DA008DE712 /* iOSWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8F3EE8192A63C4F7008DE712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F373C1429D18EE700ECC542 /* Assets.xcassets */; };
 		8FC9AAB12A7E436700507BE1 /* originalTequilaBell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC9AAB02A7E436700507BE1 /* originalTequilaBell.swift */; };
+		8FC9AAB32A7E583A00507BE1 /* originalTequilaBell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC9AAB22A7E583A00507BE1 /* originalTequilaBell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +141,7 @@
 		8F3EE80F2A63B4DC008DE712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FC9AAAF2A7E41AA00507BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8FC9AAB02A7E436700507BE1 /* originalTequilaBell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = originalTequilaBell.swift; sourceTree = "<group>"; };
+		8FC9AAB22A7E583A00507BE1 /* originalTequilaBell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = originalTequilaBell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 				8F373C2429D18EE700ECC542 /* ContentView.swift */,
 				8F373C4129D7336200ECC542 /* defaultTequilaBell.swift */,
 				8F373C4529D7344500ECC542 /* realTequilaBell.swift */,
+				8FC9AAB22A7E583A00507BE1 /* originalTequilaBell.swift */,
 				8F373C4929D738F300ECC542 /* audioSession.swift */,
 			);
 			path = Views;
@@ -508,6 +511,7 @@
 				8F373C4629D7344500ECC542 /* realTequilaBell.swift in Sources */,
 				8F373C3C29D1904F00ECC542 /* tequilaPlayer.swift in Sources */,
 				8F373C2529D18EE700ECC542 /* ContentView.swift in Sources */,
+				8FC9AAB32A7E583A00507BE1 /* originalTequilaBell.swift in Sources */,
 				8F373C2329D18EE700ECC542 /* Tequila_BellApp.swift in Sources */,
 				8F373C4A29D738F300ECC542 /* audioSession.swift in Sources */,
 			);
