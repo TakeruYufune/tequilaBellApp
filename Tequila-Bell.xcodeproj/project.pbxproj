@@ -42,6 +42,8 @@
 		8F3EE8112A63B4DC008DE712 /* iOSWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EE80C2A63B4DA008DE712 /* iOSWidget.intentdefinition */; };
 		8F3EE8142A63B4DC008DE712 /* iOSWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F3EE8022A63B4DA008DE712 /* iOSWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8F3EE8192A63C4F7008DE712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F373C1429D18EE700ECC542 /* Assets.xcassets */; };
+		8F3F33972A7E3D10004D9E5C /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3F33962A7E3D10004D9E5C /* ImagePickerViewController.swift */; };
+		8FC9AAB12A7E436700507BE1 /* originalTequilaBell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC9AAB02A7E436700507BE1 /* originalTequilaBell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,9 @@
 		8F3EE80C2A63B4DA008DE712 /* iOSWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = iOSWidget.intentdefinition; sourceTree = "<group>"; };
 		8F3EE80D2A63B4DC008DE712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F3EE80F2A63B4DC008DE712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F3F33962A7E3D10004D9E5C /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		8FC9AAAF2A7E41AA00507BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8FC9AAB02A7E436700507BE1 /* originalTequilaBell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = originalTequilaBell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,7 +206,9 @@
 		8F373C0F29D18EE600ECC542 /* Tequila-Bell */ = {
 			isa = PBXGroup;
 			children = (
+				8FC9AAAF2A7E41AA00507BE1 /* Info.plist */,
 				8F373C1029D18EE600ECC542 /* Tequila_BellApp.swift */,
+				8F3F33932A7E3CB8004D9E5C /* Controller */,
 				8F373C3629D18F8900ECC542 /* Models */,
 				8F373C3429D18F3C00ECC542 /* Views */,
 				8F373C1429D18EE700ECC542 /* Assets.xcassets */,
@@ -245,6 +252,7 @@
 				8F373C1229D18EE600ECC542 /* ContentView.swift */,
 				8F373C4B29D73C1A00ECC542 /* defaultTequilaBell.swift */,
 				8F373C4D29D73C4100ECC542 /* realTequilaBell.swift */,
+				8FC9AAB02A7E436700507BE1 /* originalTequilaBell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +315,14 @@
 				8F3EE80F2A63B4DC008DE712 /* Info.plist */,
 			);
 			path = iOSWidget;
+			sourceTree = "<group>";
+		};
+		8F3F33932A7E3CB8004D9E5C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F3F33962A7E3D10004D9E5C /* ImagePickerViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,7 +497,9 @@
 				8F373C4029D194FF00ECC542 /* tequilaPlayer.swift in Sources */,
 				8F373C1329D18EE600ECC542 /* ContentView.swift in Sources */,
 				8F3EE8112A63B4DC008DE712 /* iOSWidget.intentdefinition in Sources */,
+				8FC9AAB12A7E436700507BE1 /* originalTequilaBell.swift in Sources */,
 				8F373C1129D18EE600ECC542 /* Tequila_BellApp.swift in Sources */,
+				8F3F33972A7E3D10004D9E5C /* ImagePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,7 +674,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Tequila-Bell Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 32R8ZWSZ8D;
 				ENABLE_PREVIEWS = YES;
@@ -669,7 +687,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackz.hackathons.Tequila-Bell.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -688,7 +706,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Tequila-Bell Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 32R8ZWSZ8D;
 				ENABLE_PREVIEWS = YES;
@@ -701,7 +719,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackz.hackathons.Tequila-Bell.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -722,13 +740,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Tequila-Bell/Preview Content\"";
 				DEVELOPMENT_TEAM = 32R8ZWSZ8D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tequila-Bell/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Tequila-Bell";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "ベルの画像を追加するために許可が必要です。";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -740,7 +760,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackz.hackathons.Tequila-Bell";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -759,13 +779,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Tequila-Bell/Preview Content\"";
 				DEVELOPMENT_TEAM = 32R8ZWSZ8D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tequila-Bell/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Tequila-Bell";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "ベルの画像を追加するために許可が必要です。";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -777,7 +799,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackz.hackathons.Tequila-Bell";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -795,7 +817,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 32R8ZWSZ8D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TequilaBellComplication/Info.plist;
@@ -807,7 +829,7 @@
 					"@executable_path/../../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackz.hackathons.Tequila-Bell.watchkitapp.TequilaBellComplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -825,7 +847,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 32R8ZWSZ8D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TequilaBellComplication/Info.plist;
@@ -837,7 +859,7 @@
 					"@executable_path/../../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackz.hackathons.Tequila-Bell.watchkitapp.TequilaBellComplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -857,7 +879,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 32R8ZWSZ8D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSWidget/Info.plist;
@@ -869,7 +891,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackz.hackathons.Tequila-Bell.iOSWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -887,7 +909,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 32R8ZWSZ8D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSWidget/Info.plist;
@@ -899,7 +921,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackz.hackathons.Tequila-Bell.iOSWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
