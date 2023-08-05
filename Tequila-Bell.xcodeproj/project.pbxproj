@@ -42,7 +42,6 @@
 		8F3EE8112A63B4DC008DE712 /* iOSWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8F3EE80C2A63B4DA008DE712 /* iOSWidget.intentdefinition */; };
 		8F3EE8142A63B4DC008DE712 /* iOSWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F3EE8022A63B4DA008DE712 /* iOSWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8F3EE8192A63C4F7008DE712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F373C1429D18EE700ECC542 /* Assets.xcassets */; };
-		8F3F33972A7E3D10004D9E5C /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3F33962A7E3D10004D9E5C /* ImagePickerViewController.swift */; };
 		8FC9AAB12A7E436700507BE1 /* originalTequilaBell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC9AAB02A7E436700507BE1 /* originalTequilaBell.swift */; };
 /* End PBXBuildFile section */
 
@@ -139,7 +138,6 @@
 		8F3EE80C2A63B4DA008DE712 /* iOSWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = iOSWidget.intentdefinition; sourceTree = "<group>"; };
 		8F3EE80D2A63B4DC008DE712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F3EE80F2A63B4DC008DE712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F3F33962A7E3D10004D9E5C /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		8FC9AAAF2A7E41AA00507BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8FC9AAB02A7E436700507BE1 /* originalTequilaBell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = originalTequilaBell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -320,7 +318,6 @@
 		8F3F33932A7E3CB8004D9E5C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8F3F33962A7E3D10004D9E5C /* ImagePickerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -499,7 +496,6 @@
 				8F3EE8112A63B4DC008DE712 /* iOSWidget.intentdefinition in Sources */,
 				8FC9AAB12A7E436700507BE1 /* originalTequilaBell.swift in Sources */,
 				8F373C1129D18EE600ECC542 /* Tequila_BellApp.swift in Sources */,
-				8F3F33972A7E3D10004D9E5C /* ImagePickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

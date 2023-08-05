@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct originalTequilaBell: View {
-    @State var showingPicker = false
+    @State var selectedItems: PhotosPickerItem? = nil
     @State var image: UIImage?
     
     let soundPlayer = tequilaPlayer()
@@ -24,15 +25,24 @@ struct originalTequilaBell: View {
                         soundPlayer.musicPlay()
                     }
                     .padding()
+            } else {
+                Text("ベルにしたい画像を選択してね！")
+                    .padding()
             }
-            Text("画像を選択")
-                .onTapGesture {
-                showingPicker.toggle()
-            }
+            PhotosPicker(
+                selection: $selectedItems,
+                matching: .images,
+                photoLibrary: .shared()) {
+                    Text("写真を選択")
+                }
+                .onChange(of: selectedItems) { pickedItem in
+                    Task {
+                        guard let imageData = try await pickedItem?.loadTransferable(type: Data.self) else { return }
+                        guard let uiImage = UIImage(data: imageData) else { return }
+                        image = uiImage
+                    }
+                }
         }
-        .sheet(isPresented: $showingPicker) {
-                    ImagePickerViewController(image: $image, sourceType: .library)
-            }
         .frame(maxWidth: .infinity,
                    maxHeight: .infinity
             )
